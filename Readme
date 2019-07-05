@@ -1,0 +1,15 @@
+AM 1115201500200
+Παναγιωτίδης Παναγιώτης
+
+Έχουν υλοποιηθεί όλες οι λειτουργίες.
+
+Στο main directory μετά την εκτέλεση του Makefile :
+Για τον server ./dropbox_server.out -p portnum ή make run_server για να τρέξει ο server με port 11234
+Για τους client ./dropbox_client.out -d dirname -p portnum -w threads -b buffersize -sp serverport -sip serverip -i clientid ή make run_clientNUM όπου num 1,2,3 με default server στο linuxvm01.di.uoa.gr και listening port 11234.
+
+Το client id υπάρχει για την δημιουργία των mirror directory που θα βάζουνε μέσα τα αρχεία από τους διάφορους client.
+
+Η δομή tuple_list κρατάει τα στοιχεία των clients.
+Η δομή file_list κρατάει πληροφορία σχετικά με τα αρχεία που έχει στην κατοχή του ο client.
+
+Τα directories πρέπει να βρίσκονται στο main directory.
